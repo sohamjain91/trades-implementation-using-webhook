@@ -14,10 +14,10 @@ is_client_logged_in = False
 @app.route('/login', methods=['GET'])
 def login():
     global client
-    client = NeoAPI(consumer_key="Dq1AUPAjcnfSIjcpkcNvERTZnE0a", consumer_secret="smojCtD74jGgSMZjbOsL4tTYutAa", 
+    client = NeoAPI(consumer_key="", consumer_secret="", 
                     environment='prod', on_message=on_message, on_error=on_error, on_close=None, on_open=None)
 
-    client.login(mobilenumber="+919990620500", password="Wealth@12345")
+    client.login(mobilenumber="+", password="")
     return "Login initiated, please provide OTP."
 
 
